@@ -17,7 +17,7 @@ interface ILayerZeroEndpointV2 {
     function eid() external view returns (uint32);
 
     function lzReceive(
-        Origin calldata _origin,
+        Origin calldata _origin, // Verified?
         address _receiver,
         bytes32 _guid,
         bytes calldata _message,
