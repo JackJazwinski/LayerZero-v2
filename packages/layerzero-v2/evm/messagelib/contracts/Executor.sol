@@ -16,9 +16,9 @@ import { WorkerUpgradeable } from "./upgradeable/WorkerUpgradeable.sol";
 interface ILayerZeroEndpointV2 {
     function eid() external view returns (uint32);
 
-    function lzReceive(
+    function lzReceive( // is there any restrictions?
         Origin calldata _origin, // Verified?
-        address _receiver,
+        address _receiver, // does it authenitcate?
         bytes32 _guid,
         bytes calldata _message,
         bytes calldata _extraData
